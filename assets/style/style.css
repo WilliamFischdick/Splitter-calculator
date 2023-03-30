@@ -1,0 +1,25 @@
+
+@import url("main.css");
+
+
+
+body {
+    font-size: 24px;
+    font-family: var(--principal-font);
+}
+
+:root {
+
+    /*Colors*/
+    
+    --very-dark-cyan: #00494d;
+    --dark-grayish-cyan: #5e7a7d;
+    --grayish-cyan: #7f9c9f;
+    --light-grayish-cyan: #c5e4e7;
+    --very-light-grayish-cyan: #f4fafa;
+    --white: #ffffff;
+
+    /*Font*/
+
+    --principal-font: 'Space Mono', monospace;
+}
