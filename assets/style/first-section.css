@@ -1,0 +1,48 @@
+
+.container__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.bill__text, 
+.tip__text,
+.people__text {
+    font-size: 15px;
+    color: var(--dark-grayish-cyan);
+    padding: 3em 0 .5em 0;
+}
+
+.bill__number,
+.people__number {
+    width: 318px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--very-light-grayish-cyan);
+}
+
+.bill__number::placeholder {
+    font-family: var(--principal-font);
+    font-size: 22px;
+    padding-left: 13em;
+    color: var(--grayish-cyan);
+    background: url("../img/icon-dollar.svg") no-repeat;
+    background-position: .6em;
+}
+
+
+/* Removing arrows Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus {
+    outline: none;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--strong-cyan);
+}

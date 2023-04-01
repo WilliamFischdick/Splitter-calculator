@@ -17,6 +17,10 @@ main {
     padding-top: 2em;
 }
 
+.bottom {
+    padding-bottom: 2em;
+}
+
 .container__calculator {
     display: flex;
     flex-direction: column;
@@ -25,15 +29,4 @@ main {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     padding: 0 1.5em 0 1.5em;
-}
-
-.container__content {
-    display: flex;
-    flex-direction: column;
-}
-
-.bill__text, 
-.tip__text,
-.people__text {
-    font-size: 15px;
 }
