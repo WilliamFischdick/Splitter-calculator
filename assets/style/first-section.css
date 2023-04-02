@@ -2,6 +2,7 @@
 .container__content {
     display: flex;
     flex-direction: column;
+    padding-bottom: 2em;
 }
 
 .bill__text, 
@@ -30,6 +31,15 @@
     background-position: .6em;
 }
 
+.people__number::placeholder {
+    font-family: var(--principal-font);
+    font-size: 22px;
+    padding-left: 13em;
+    color: var(--grayish-cyan);
+    background: url("../img/icon-person.svg") no-repeat;
+    background-position: .6em;
+}
+
 
 /* Removing arrows Chrome, Safari, Edge, Opera */
 
@@ -46,3 +56,51 @@ input:focus {
     border-style: solid;
     border-color: var(--strong-cyan);
 }
+
+.tips__container {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    justify-content: center;
+    row-gap: .5em;
+    column-gap: .75em;
+}
+
+.btn-tip-5,
+.btn-tip-10,
+.btn-tip-15,
+.btn-tip-25,
+.btn-tip-50 {
+    width: 100%;
+    height: 50px;
+    background-color: var(--very-dark-cyan);
+    border-radius: 5px;
+    border-style: none;
+    font-size: 22px;
+    font-family: var(--principal-font);
+    color: var(--white);
+}
+
+.custom__tip {
+    width: 146px;
+    height: 48px;
+    background-color: var(--very-light-grayish-cyan);
+    border-radius: 5px;
+    border-style: none;
+    
+}
+
+.custom__tip::placeholder {
+    font-size: 22px;
+    font-family: var(--principal-font);
+    color: var(--dark-grayish-cyan);
+    text-align: center;
+}
+
+/* btn - Active*/
+
+/* .active {
+     background-color: var(--strong-cyan);
+     color: var(--very-dark-cyan);
+}
+
+*/
