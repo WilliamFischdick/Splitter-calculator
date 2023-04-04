@@ -74,9 +74,30 @@ btnTips.forEach((btn) => {
                 alertError.style.display = "block";
             }
 
-
         })
 
+})
 
+btnReset.addEventListener('click', () => {
+    
+    billNumber.value = "";
+    customTip.value = "";
+    peopleNumber.value = "";
+    tipAmountResult.innerHTML = "$ 0.00";
+    totalResult.innerHTML = "$ 0.00";
+    alertError.style.display = "none";
+})
 
+customTip.addEventListener('click', () => {
+    const billNumber = document.querySelector(".bill__number").value;
+    const peopleNumber = document.querySelector(".people__number").value;
+    
+    if (billNumber !=="" && peopleNumber !=="") {
+        
+        let tipPersonValue = (billNumber * customTip.value / 100) / peopleNumber;
+        let totalPersonValue = (billNumber / peopleNumber) + tipPersonValue;
+
+        tipAmountResult.innerHTML = `\$ ${tipPersonValue.toFixed(2)}`;
+        totalResult.innerHTML = `\$ ${totalPersonValue.toFixed(2)}`;
+    }
 })
